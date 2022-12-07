@@ -6,6 +6,165 @@
   <link rel="icon" href="images/favi.png">
 </head>
 <body>
+
+
+
+<script>
+
+function ff(){
+  w=document.getElementById("nam").value;
+  if(w.includes("1")||
+     w.includes("2")||
+     w.includes("3")||
+     w.includes("4")||
+     w.includes("5")||
+     w.includes("6")||
+     w.includes("7")||
+     w.includes("8")||
+     w.includes("9")||
+     w.includes("0")
+     ){
+      alert("Invalid characters");
+  }
+}
+
+function uu(){
+  w=document.getElementById("uuu").value;
+  if(w.includes("1")||
+     w.includes("2")||
+     w.includes("3")||
+     w.includes("4")||
+     w.includes("5")||
+     w.includes("6")||
+     w.includes("7")||
+     w.includes("8")||
+     w.includes("9")||
+     w.includes("0")
+     ){
+      alert("Invalid characters");
+  }
+}
+
+function ff1(){
+  w=document.getElementById("nam1").value;
+  if(w.includes("1")||
+     w.includes("2")||
+     w.includes("3")||
+     w.includes("4")||
+     w.includes("5")||
+     w.includes("6")||
+     w.includes("7")||
+     w.includes("8")||
+     w.includes("9")||
+     w.includes("0")
+     ){
+      alert("Invalid characters");
+  }
+}
+
+function ff2(){
+  w=document.getElementById("nam2").value;
+  if(w.includes("1")||
+     w.includes("2")||
+     w.includes("3")||
+     w.includes("4")||
+     w.includes("5")||
+     w.includes("6")||
+     w.includes("7")||
+     w.includes("8")||
+     w.includes("9")||
+     w.includes("0")
+     ){
+      alert("Invalid characters");
+  }
+}
+
+function rolll(){
+  w=document.getElementById("roll1").value;
+  if(w.includes("/")||
+     w.includes("\\")||
+     w.includes("|")||
+     w.includes("<")||
+     w.includes(">")||
+     w.includes(",")||
+     w.includes("!")||
+     w.includes("#")||
+     w.includes("%")||
+     w.includes("&")
+     ){
+      alert("Invalid characters");
+  }
+}
+
+
+function yos(){
+  w=document.getElementById("yearr").value;
+    if(w<5 || w>0){
+    alert("Invalid characters");}
+}
+
+function pp(){
+  w=document.getElementById("ppp").value;
+    if(w>999999999 || w<10000000000){
+    alert("Invalid characters");}
+}
+
+function em(){
+  w=document.getElementById("emm").value;
+  if(w.includes("@") && w.includes(".com")){
+    ok=0
+  }
+  else{
+    alert("Invalid Mail Id");
+  }
+}
+
+function gen(){
+  w=document.getElementById("genn").value;
+  if(w.includes("male") || w.includes("female") || w.includes("others")){
+    ok=0
+  }
+  else{
+    alert("Select a gender");
+  }
+}
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <img src="images/amrita.png" alt="Amrita" style="padding: 30px 200px;">
   <img src="images/anohka.jpg" alt="ANOKHA" width="250px" height="150px" style="padding: 30px 200px;">
 <div class= "flex-container">
@@ -29,17 +188,71 @@
     <!-- <center> -->
     <form class= "form" style="padding-left: 550px;"  onsubmit="return validateForm()" method="post" action="/action_page.php">
         <br><br>
-      <label for= "name" style="color: white;" ><b>First Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</b></label>
-      <input type= "text" placeholder="Enter your first name" name="name" class="space" required>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <label for= "name" style="color: white;"><b>First Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</b></label>
+      <input id="nam" onchange="ff()" type= "text" placeholder="Enter your first name" name="name" class="space" required>
       <br><br>
+
+
+
+
+
+
+
+
+
+
+
       <label for= "name" style="color:white;" ><b>Last Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</b></label>
-      <input type= "text" placeholder="Enter your last name" name="name" class="space" required>
+      <input id="nam1" onchange="ff1()" type= "text" placeholder="Enter your last name" name="name" class="space" required>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <br><br>
       <label for= "name" style="color:white;" ><b>College &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</b></label>
-      <input type= "text" placeholder="Enter your college name" name="name" class="space" required>
+      <input id="nam2" onchange="ff2()" type= "text" placeholder="Enter your college name" name="name" class="space" required>
+
+
+
       <br><br>
       <label for= "name" style="color:white;" ><b>Roll No.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</b></label>
-      <input type= "text" placeholder="Enter your roll number" name="name" class="space" required>
+      <input id="roll1" onchange="rolll()" type="text" placeholder="Enter your roll number" name="name" class="space" required>
+
+
+
+
+
+
+
+
       <br><br>
       <label for= "name" style="color:white;" ><b>Course&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</b></label>
         <select name="books" id="dropdown">
@@ -67,13 +280,13 @@
         <label for="vehicle3">Cloud Computing</label>
       <br><br>
       <label for= "name" style="color:white;" ><b>Year of Study&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</b></label>
-      <input type= "text" placeholder="Which year of college" name="name" class="space" required>
+      <input id="yearr" onchange="yos()" type= "text" placeholder="Which year of college" name="name" class="space" required>
       <br><br>
       <label for="phone" style="color:white;"><b>Phone&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</b></label>
-      <input type="tel" id= "phone" placeholder="Enter Mobile No." name= "name" class= "space" required>
+      <input id="ppp" onchange="pp()" type="tel" id= "phone" placeholder="Enter Mobile No." name= "name" class= "space" required>
       <br><br>
       <label for= "email" style="color:white;"><b>Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</b></label>
-      <input type= "text" placeholder="email@address.com" name="email" class= "space" required>
+      <input id="emm" onchange="em()" type= "text" placeholder="email@address.com" name="email" class= "space" required>
       <br><br>
       <label for= "start" style="color:white;"><b>Date of Birth&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</b></label>
       <input type="date" id="start" name="start-date"
@@ -87,8 +300,8 @@
         <input type="radio" id="others" name="gender" value="others">
         <label for="javascript">Non Binary</label>
       <br><br>
-      <label for= "name" style="color:white;" ><b>Username&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</b></label>
-      <input type= "text" placeholder="Enter your username" name="name" class="space" required>
+      <label  for= "name" style="color:white;" ><b>Username&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</b></label>
+      <input id="uuu" onchange="uu()" type= "text" placeholder="Enter your username" name="name" class="space" required>
       <br><br>
       <label for= "name" style="color:white;" ><b>Password&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</b></label>
       <input type= "password" placeholder="Enter your password" name="name" class="space" required>
