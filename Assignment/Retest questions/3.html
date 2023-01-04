@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html style="background-color: bisque;">
+    <head>
+        <title>Missed Periodicals Form</title>
+        <h1 style="color: blue;">Missed Periodicals Form</h1>
+
+        <script>
+            function ff(){
+                ww=document.getElementById("name").value;   
+                if(ww.length > 24){
+                      alert("Name Range limited to 24");
+                }
+            }
+
+            function Submit(){
+                m = document.getElementById("dept").value;
+                s = document.getElementById("SubCode").value;
+
+                if(m=="CSE"){
+                let text = s;
+                let r = /cse/i;
+                const pattern = r;
+                if(pattern.test(text)){
+                    w = document.getElementById("name").value;
+                    x = document.getElementById("Roll").value;
+                    u = document.getElementById("Sname").value;
+                    if(w.length != 0 && u.length != 0 && x.length != 0){
+                    alert("Registered successfully");
+                    }
+                    else{
+                        alert("Some Fields are empty");
+                    }
+                }
+                else{
+                    alert("Subject code doesnt match with department");
+                }
+                }
+
+// --------------------------------------------------------------------------------------------------------------
+
+                if(m=="CYS"){
+                let text = s;
+                let r = /cys/i;
+                const pattern = r;
+                if(pattern.test(text)){
+                    w = document.getElementById("name").value;
+                    x = document.getElementById("Roll").value;
+                    u = document.getElementById("Sname").value;
+                    if(w.length != 0 && u.length != 0 && x.length != 0){
+                    alert("Registered successfully");
+                    }
+                    else{
+                        alert("Some Fields are empty");
+                    }
+                }
+                else{
+                    alert("Subject code doesnt match with department");
+                }
+                }
+
+// --------------------------------------------------------------------------------------------------------------
+
+if(m=="CEN"){
+                let text = s;
+                let r = /CEN/i;
+                const pattern = r;
+                if(pattern.test(text)){
+                    w = document.getElementById("name").value;
+                    x = document.getElementById("Roll").value;
+                    u = document.getElementById("Sname").value;
+                    if(w.length != 0 && u.length != 0 && x.length != 0){
+                    alert("Registered successfully");
+                    }
+                    else{
+                        alert("Some Fields are empty");
+                    }
+                }
+                else{
+                    alert("Subject code doesnt match with department");
+                }
+                }
+
+// --------------------------------------------------------------------------------------------------------------
+if(m=="ECE"){
+                let text = s;
+                let r = /ECE/i;
+                const pattern = r;
+                if(pattern.test(text)){
+                    w = document.getElementById("name").value;
+                    x = document.getElementById("Roll").value;
+                    u = document.getElementById("Sname").value;
+                    if(w.length != 0 && u.length != 0 && x.length != 0){
+                    alert("Registered successfully");
+                    }
+                    else{
+                        alert("Some Fields are empty");
+                    }
+                }
+                else{
+                    alert("Subject code doesnt match with department");
+                }
+                }
+
+// --------------------------------------------------------------------------------------------------------------
+if(m=="EEE"){
+                let text = s;
+                let r = /EEE/i;
+                const pattern = r;
+                if(pattern.test(text)){
+                    w = document.getElementById("name").value;
+                    x = document.getElementById("Roll").value;
+                    u = document.getElementById("Sname").value;
+                    if(w.length != 0 && u.length != 0 && x.length != 0){
+                    alert("Registered successfully");
+                    }
+                    else{
+                        alert("Some Fields are empty");
+                    }
+                }
+                else{
+                    alert("Subject code doesnt match with department");
+                }
+                }
+
+// --------------------------------------------------------------------------------------------------------------
+if(m=="CVL"){
+                let text = s;
+                let r = /CVL/i;
+                const pattern = r;
+                if(pattern.test(text)){
+                    w = document.getElementById("name").value;
+                    x = document.getElementById("Roll").value;
+                    u = document.getElementById("Sname").value;
+                    if(w.length != 0 && u.length != 0 && x.length != 0){
+                    alert("Registered successfully");
+                    }
+                    else{
+                        alert("Some Fields are empty");
+                    }
+                }
+                else{
+                    alert("Subject code doesnt match with department");
+                }
+                }
+
+// --------------------------------------------------------------------------------------------------------------
+if(m=="AERO"){
+                let text = s;
+                let r = /AERO/i;
+                const pattern = r;
+                if(pattern.test(text)){
+                    w = document.getElementById("name").value;
+                    x = document.getElementById("Roll").value;
+                    u = document.getElementById("Sname").value;
+                    if(w.length != 0 && u.length != 0 && x.length != 0){
+                    alert("Registered successfully");
+                    }
+                    else{
+                        alert("Some Fields are empty");
+                    }
+                }
+                else{
+                    alert("Subject code doesnt match with department");
+                }
+                }
+
+// --------------------------------------------------------------------------------------------------------------
+if(m=="MECH"){
+                let text = s;
+                let r = /MECH/i;
+                const pattern = r;
+                if(pattern.test(text)){
+                    w = document.getElementById("name").value;
+                    x = document.getElementById("Roll").value;
+                    u = document.getElementById("Sname").value;
+                    if(w.length != 0 && u.length != 0 && x.length != 0){
+                    alert("Registered successfully");
+                    }
+                    else{
+                        alert("Some Fields are empty");
+                    }
+                }
+                else{
+                    alert("Subject code doesnt match with department");
+                }
+                }
+
+// --------------------------------------------------------------------------------------------------------------
+if(m=="AUTO"){
+                let text = s;
+                let r = /AUTO/i;
+                const pattern = r;
+                if(pattern.test(text)){
+                    w = document.getElementById("name").value;
+                    x = document.getElementById("Roll").value;
+                    u = document.getElementById("Sname").value;
+                    if(w.length != 0 && u.length != 0 && x.length != 0){
+                    alert("Registered successfully");
+                    }
+                    else{
+                        alert("Some Fields are empty");
+                    }
+                }
+                else{
+                    alert("Subject code doesnt match with department");
+                }
+                }
+
+// --------------------------------------------------------------------------------------------------------------
+
+
+            }
+        </script>
+
+
+    </head>
+
+    <body>
+        <form class= "form" onsubmit="validateForm()">
+
+            <label for= "name" style="color: black;"><b>Name : </b></label>
+            <input id="name" onchange="ff()" type= "text" name="name" class="space" required><br><br>
+
+            <label for= "dept" style="color: black;"><b>Department : </b></label>
+            <select name="dept" id="dept">
+                <option value="no input ">Select Course</option>  
+                <option value="CSE">CSE</option>  
+                <option value="CYS">CYS</option>  
+                <option value="CEN">CEN</option>  
+                <option value="ECE">ECE</option>  
+                <option value="EEE">EEE</option>  
+                <option value="CVL">CVL</option>
+                <option value="AERO">AERO</option>
+                <option value="MECH">MECH</option>
+                <option value="AUTO">AUTO</option>
+            </select><br><br>
+
+            <label for= "Roll no." style="color: black;"><b>Roll no. : </b></label>
+            <input id="Roll" type= "text" name="name" class="space" required><br><br>
+
+            <label for= "SubCode" style="color: black;"><b>Subject Code : </b></label>
+            <input id="SubCode"  type= "text" name="name" class="space" required><br><br>
+        
+            <label for= "Sname" style="color:black;"><b>Subject Name : </b></label>
+            <input id="Sname"  type= "text" name="name" class="space" required><br><br>
+
+            <button onclick="Submit()" type="submit" value="Submit">Submit</button>
+        
+        </form>
+    </body>
+
+    <footer>
+    </footer>
+</html>
+
+
+
+
+<!-- 3. Write a JavaScript function ”validateForm()” to validate the Missed Periodicals Form created
+in the previous question. (15 Marks) [CO5 - BTL6]
+(a) The name should be validated for the length mentioned in the previous question.
+(b) The subject code should be validated against the department selected. (Example: If
+department selected is CYS, then subject code should have CYS as part of the entered
+text.)
+(c) Appropriate error messages should be printed in the console, and an alert pop-up should
+be displayed wherever required.
+(d) On Successful submission, alert saying ”Registered successfully” should be displayed. -->

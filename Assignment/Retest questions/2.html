@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html style="background-color: bisque;">
+    <head>
+        <title>Missed Periodicals Form</title>
+        <h1 style="color: blue;">Missed Periodicals Form</h1>
+
+        <script>
+            function ff(){
+                w=document.getElementById("name").value;   
+                if(w.length > 24){
+                      alert("Name Range limited to 24");
+                }
+            }
+        </script>
+
+
+    </head>
+
+    <body>
+        <form class= "form" onsubmit="return validateForm()" method="post" action="/action_page.php">
+
+            <label for= "name" style="color: black;"><b>Name : </b></label>
+            <input id="name" onchange="ff()" type= "text" name="name" class="space" required><br><br>
+
+            <label for= "dept" style="color: black;"><b>Department : </b></label>
+            <select name="dept" id="dept">
+                <option value="no input ">Select Course</option>  
+                <option value="CSE">CSE</option>  
+                <option value="CYS">CYS</option>  
+                <option value="CEN">CEN</option>  
+                <option value="ECE">ECE</option>  
+                <option value="EEE">EEE</option>  
+                <option value="CVL">CVL</option>
+                <option value="AERO">AERO</option>
+                <option value="MECH">MECH</option>
+                <option value="AUTO">AUTO</option>
+            </select><br><br>
+
+            <label for= "Roll no." style="color: black;"><b>Roll no. : </b></label>
+            <input id="Roll" type= "text" name="name" class="space" required><br><br>
+
+            <label for= "SubCode" style="color: black;"><b>Subject Code : </b></label>
+            <input id="SubCode"  type= "text" name="name" class="space" required><br><br>
+        
+            <label for= "Sname" style="color:black;"><b>Subject Name : </b></label>
+            <input id="Sname"  type= "text" name="name" class="space" required><br><br>
+
+            <button type="submit" value="Submit">Submit</button>
+        
+        </form>
+    </body>
+
+    <footer>
+    </footer>
+</html>
+
+
+
+<!-- 2. Write the HTML code to do the following. (15 Marks)[CO2 - BTL6]
+(a) A form to collect the name, department, roll number, subject code and subject name.
+
+(b) The name should be a text field with a length limited to 24 characters, department
+should be CSE, CYS, CEN, ECE, EEE, CVL, AERO, MECH, AUTO in a drop-down
+list box, subject code and subject name can be a text field. A button to submit the form.
+(c) The page title should be ”Missed Periodicals Form”. The header within the page should
+be ”Missed Periodicals Form” with size as heading 1 and text color as blue.
+(d) The background color for the page can be set to your choice. -->
